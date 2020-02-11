@@ -6,7 +6,7 @@ from snippets.models import LANGUAGE_CHOICES, STYLE_CHOICES, Snippet
 class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
-        field = (
+        fields = (
             'pk',
             'title',
             'code',
