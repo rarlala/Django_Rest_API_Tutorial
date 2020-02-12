@@ -3,8 +3,17 @@ from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from snippets.models import Snippet
-from snippets.serializers import SnippetSerializer
+from ..models import Snippet
+from ..serializers import SnippetSerializer
+
+# apis모듈을 apis패키지로 만들고,
+# apis.api_view 모듈에 이 파일에 있는 내용을 옮기기
+# snippets.urls에서 APIView들을 가져오는 경로를 적절히 수정
+
+# apis.py(기존)
+# apis/
+#   __init__.py
+#   api_view.py <- 여기
 
 
 class SnippetListCreateAPIView (APIView):
