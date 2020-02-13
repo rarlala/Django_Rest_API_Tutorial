@@ -11,6 +11,8 @@ djangorestframework = "^3.11.0"
 notebook = "^6.0.3"
 django = "<3"
 pygments = "^2.5.2"
+model-bakery = "^1.1.0"
+model_bakery = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 
